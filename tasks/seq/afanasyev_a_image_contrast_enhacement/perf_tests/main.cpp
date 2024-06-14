@@ -10,7 +10,7 @@
 using namespace AfanasyevAlekseySeq;
 
 TEST(afanasyev_a_image_contrast_enhacement_seq, test_pipeline_run) {
-  std::vector<Pixel> input_pixels = generateRandomPixels(1'000'000);
+  std::vector<Pixel> input_pixels = generateRandomPixels(10'000'000);
   std::vector<Pixel> output_pixels(input_pixels.size());
   std::vector<Pixel> expected_output_pixels(input_pixels.size());
   bool ok = contrastEnhancementSeq(input_pixels, expected_output_pixels);
@@ -52,7 +52,7 @@ TEST(afanasyev_a_image_contrast_enhacement_seq, test_pipeline_run) {
 }
 
 TEST(afanasyev_a_image_contrast_enhacement_seq, test_task_run) {
-  std::vector<Pixel> input_pixels = generateRandomPixels(1'000'000);
+  std::vector<Pixel> input_pixels = generateRandomPixels(10'000'000);
   std::vector<Pixel> output_pixels(input_pixels.size());
   std::vector<Pixel> expected_output_pixels(input_pixels.size());
   bool ok = contrastEnhancementSeq(input_pixels, expected_output_pixels);
