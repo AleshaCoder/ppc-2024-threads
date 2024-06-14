@@ -3,8 +3,9 @@ name: Collect performance statistic
 # on: [push, pull_request]
 
 on:
-  schedule:
-    - cron: '0 12 */1 * *'
+  # schedule:
+  #  - cron: '0 12 */1 * *'
+  workflow_dispatch:
 
 jobs:
   ubuntu-gcc-build:
